@@ -25,6 +25,10 @@ return require('packer').startup(function(use)
     use('tpope/vim-fugitive')
     use('lewis6991/gitsigns.nvim')
 
+    use('nvim-lualine/lualine.nvim')
+
+    use('numToStr/Comment.nvim') -- comment visual regions/lines
+
     use {
         'VonHeikemen/lsp-zero.nvim',
         requires = {

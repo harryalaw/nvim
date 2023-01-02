@@ -37,6 +37,10 @@ return require('packer').startup(function(use)
             { 'williamboman/mason.nvim' },
             { 'williamboman/mason-lspconfig.nvim' },
 
+            -- Formatting
+            { 'jose-elias-alvarez/null-ls.nvim' },
+            { 'jay-babu/mason-null-ls.nvim' },
+
             -- Autocompletion
             { 'hrsh7th/nvim-cmp' },
             { 'hrsh7th/cmp-buffer' },

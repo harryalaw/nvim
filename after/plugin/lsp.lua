@@ -1,5 +1,4 @@
 local lsp = require('lsp-zero')
-local null_ls = require('null-ls')
 
 lsp.preset('recommended')
 lsp.setup()
@@ -32,9 +31,3 @@ lsp.on_attach(function(_, bufnr)
     vim.keymap.set("i", "<C-h>", function() vim.lsp.buf.signature_help() end, opts)
 end)
 
-local mason_nullls = require("mason-null-ls")
-mason_nullls.setup({
-    automatic_installation = true,
-    automatic_setup = true,
-})
-mason_nullls.setup_handlers({})

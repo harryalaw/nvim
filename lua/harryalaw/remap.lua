@@ -29,3 +29,6 @@ vim.keymap.set("v", "<leader>d", "\"_d")
 vim.keymap.set("n", "<leader>lf", function()
     vim.lsp.buf.format()
 end)
+
+vim.keymap.set("n", "<leader>w", ":w<CR>")
+

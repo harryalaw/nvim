@@ -77,6 +77,13 @@ local servers = {
   -- ts_ls = {},
   --
 
+  biome = {
+    root_dir = function(fname)
+      return vim.fs.root(fname, "pnpm-workspace.yaml")
+        or vim.fs.root(fname, "biome.json")
+    end,
+  },
+
   lua_ls = {
     -- cmd = {...},
     -- filetypes = { ...},
